@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reminders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>My Reminders</h1>
+            <div class="theme-switch">
+                <label class="switch">
+                    <input type="checkbox" id="toggleTheme">
+                    <span class="slider round"></span>
+                </label>
+                <span>Toggle Dark/Light Theme</span>
+            </div>
+        </header>
+        <div class="task-input">
+            <input type="text" id="task" placeholder="Enter a task..." required>
+            <input type="time" id="time" required>
+            <button id="addTask">Add Task</button>
+        </div>
+        <h2>Tasks</h2>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
